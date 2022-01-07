@@ -1,7 +1,7 @@
 print("""
 ------------------------------------------------------------PUB----------------------------------------------------------------------------
 """)
-version = "0.1.0"
+version = "0.1.1"
 creator = "bee-Michi"
 contributors = {
     "Currently nobady :( You can be the first one :)"
@@ -12,9 +12,11 @@ github = ""
 
 def help():
     helpp = ["Help: This command!"]
+    for hel in helpp:
+        print(hel)
 
+while True:
+    PUBseleect = input("Welcome! Use help to get all utilites and commands for some useful commands: ")
 
-PUBseleect = input("Welcome! Use help to get all utilites and commands for some useful commands: ")
-
-if PUBseleect == "help":
-    print("Not yet implemented")
+    if PUBseleect == "help":
+        help()
