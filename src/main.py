@@ -1,3 +1,4 @@
+import time
 print("""
 ------------------------------------------------------------PUB----------------------------------------------------------------------------
 """)
@@ -11,7 +12,7 @@ liscence = "This project is distributed under the MIT liscence. Learn more info 
 github = "https://github.com/bee-Michi/PUD"
 
 def help():
-    helpp = ["Help"]
+    helpp = ["Help", "Time"]
     for hel in helpp:
         print(hel)
 def commands():
@@ -21,6 +22,10 @@ def commands():
 def contributor():
     for contribute in contributors:
         print(contribute)
+def clock():
+    t = time.localtime()
+    current_time = time.strftime("%H:%M:%S", t)
+    print(current_time)
 while True:
     PUBseleect = input("Welcome! Use help to get all utilites and commands for some useful commands: ")
 
@@ -44,3 +49,5 @@ while True:
         break
     elif PUBseleect == "exit":
         break
+    elif PUBseleect == "time":
+        clock()
