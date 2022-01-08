@@ -20,3 +20,10 @@ v 0.1.5 {
     -Added Timer
     -fixes
 }
+v 0.2.0 {
+    -Added liscence compiler
+    -Added Password Generator using a module
+    -Added Requirements.txt
+    -Updated readme
+    -fixes
+}
