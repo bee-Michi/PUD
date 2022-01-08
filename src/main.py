@@ -5,7 +5,7 @@ print("""
 ------------------------------------------------------------PUB----------------------------------------------------------------------------
 """)
 #Version, whhith a reminder to update
-version = "0.1.4 This version is beta. Make shure you are on the lates version by using the github command ang going to the lates relese"
+version = "0.1.5 This version is beta. Make shure you are on the lates version by using the github command ang going to the latest relese"
 #Creator, whitch tells the cretor of this project
 creator = "bee-Michi"
 #Contributors of this project
@@ -21,14 +21,18 @@ github = "https://github.com/bee-Michi/PUD"
 #Function to print the help command
 def help():
     #This is the help command. It hosts all the available utilities and commands
-    helpp = ["Help", "Time", "Random number generator"]
+    helpp = ["Time", "Random number generator", "Coundown"]
+    #Sort the list alphabeticlly
+    helpp.sort()
     # For loop to print all the help commands up here
     for hel in helpp:
         print(hel)
 #Function to print commands
 def commands():
     # This is the command command, here all the avialable commands are available.
-    commad = ["Version", "Creator", "Contributors", "copytirgth", "liscence", "github", "help"]
+    commad = ["Help", "Version", "Creator", "Contributors", "Copytirgth", "Github",]
+    #Sort the list alphabeticlly
+    commad.sort()
     # For loop to print all the commands up here
     for command in commad:
         print(command)
@@ -70,6 +74,28 @@ def rng():
         rngncnl()
     else:
         print("not supported, try agian!")
+#Function to print a countdown
+def countdownI():
+    #Countdown function to calculate the time
+    def countdown(t):
+        #Main while loop
+        while t:
+            #Calculate mins, secs
+            mins, secs = divmod(t, 60)
+            #Format the timer
+            timer = '{:02d}:{:02d}'.format(mins,secs)
+            #End the timer
+            print(timer, end="\r")
+            #Make it sleep so that it's a real timer
+            time.sleep(1)
+            #Then detract a second
+            t -= 1
+        #Print this when the timer ends
+        print("Timer completed!")
+    #Ask for the time in seconds
+    t = input("Welcome to countdown! Enter the time in seconds: ")
+    #And then we call the function we call the function
+    countdown(int(t))
 #Main while true loop
 while True:
     #The central input
@@ -107,3 +133,5 @@ while True:
     #Acces random number generator
     elif PUBseleect == "random number generator":
         rng()
+    elif PUBseleect == "countdown":
+        countdownI()
