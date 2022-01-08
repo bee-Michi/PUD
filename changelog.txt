@@ -11,3 +11,7 @@ v 0.1.2 {
 v 0.1.3 {
     -Added time command
 }
+v 0.1.4 {
+    -Added random number generator
+    -Added comments
+}
