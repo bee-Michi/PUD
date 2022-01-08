@@ -1,6 +1,7 @@
 #We import the required modules
 import time, random
 #Non standard module
+import names
 from password_generator import PasswordGenerator
 #Title, for flex and beauty
 print("""
@@ -214,5 +215,6 @@ while True:
     #Acces the liscence compiler
     elif PUBseleect == "liscence compiler":
         liscencecompiler()
+    #Acces the password generator
     elif PUBseleect == "password generator":
         passgenertor()
