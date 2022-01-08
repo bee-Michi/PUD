@@ -1,7 +1,7 @@
 # Pub
-A beatiful python bot!
+A beatiful python bot. This is a remake of BOTW, but since it was full of copy paste, bugs, and bad code, i remade it.
 
-This project is under heavy developement, please help me by contributing!
+This broject is in beta, and under heavy development, so please help me by contributing.
 
 ## Liscence
 MIT Liscence
