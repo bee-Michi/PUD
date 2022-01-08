@@ -5,7 +5,7 @@ print("""
 ------------------------------------------------------------PUB----------------------------------------------------------------------------
 """)
 #Version, whhith a reminder to update
-version = "0.1.3 This version is beta. Make shure you are on the lates version by using the github command ang going to the lates relese"
+version = "0.1.4 This version is beta. Make shure you are on the lates version by using the github command ang going to the lates relese"
 #Creator, whitch tells the cretor of this project
 creator = "bee-Michi"
 #Contributors of this project
@@ -59,38 +59,51 @@ def rng():
         print(randfinal)
     #else use this function 
     def rngncnl():
+        #Get a random seed 
         randfinal = random.random()
+        #Print it
         print(randfinal)
+    #If statment whith the input to check what function to use.
     if cnl == "y":
         rngcnl()
     elif cnl == "n":
         rngncnl()
     else:
         print("not supported, try agian!")
+#Main while true loop
 while True:
+    #The central input
     PUBseleect = input("Welcome! Use help to get all utilites and commands for some useful commands: ")
-
+    #If and elif commands, to check what to use
+    #Help
     if PUBseleect == "help":
         help()
+    #Commands
     elif PUBseleect == "commands":
         commands()
+    #Version
     elif PUBseleect == "version":
         print(version)
+    #Creator
     elif PUBseleect == "creator":
         print(creator)
+    #Contributors
     elif PUBseleect == "contributors":
         contributor()
+    #Copytirgth
     elif PUBseleect == "copyrigth":
         print(copyrigth)
-    elif PUBseleect == "liscence":
-        print(liscence)
+    #Github
     elif PUBseleect == "github":
         print(github)
+    #Two versions to exit the program, quit and exit
     elif PUBseleect == "quit":
         break
     elif PUBseleect == "exit":
         break
+    #Access time
     elif PUBseleect == "time":
         clock()
+    #Acces random number generator
     elif PUBseleect == "random number generator":
         rng()
