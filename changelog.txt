@@ -21,9 +21,15 @@ v 0.1.5 {
     -fixes
 }
 v 0.2.0 {
-    -Added liscence compiler
+    -Added license compiler
     -Added Password Generator using a module
     -Added Requirements.txt
     -Updated readme
     -fixes
+}
+
+v 0.2.1 {
+    -Fixed a lot of errors and a lot of picky things, changed functions name and other things. 
+    -Updated readme
+    -Added installation.md
 }
