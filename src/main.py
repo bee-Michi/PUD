@@ -20,7 +20,7 @@ github = "https://github.com/bee-Michi/PUD"
 #Function to print the help command
 def printhelp():
     #This is the help command. It hosts all the available utilities and commands
-    helptoprint = ["Time", "Random number generator", "Countdown", "Password generator"]
+    helptoprint = ["Time", "Random number generator", "Countdown", "Password generator", "Calculator", "Random name generator"]
     #Sort the list alphabetically
     helptoprint.sort()
     # For loop to print all the help commands up here
@@ -163,6 +163,36 @@ def passwordgeneretor():
         #Final else to check if the input is not equal to 1 or 2, and print an error
         else:
             print("Not an accepted mode!")
+def calculator():
+    while True: 
+        try:
+            print(eval(input("Input number/s: ")))
+        except KeyboardInterrupt:
+            break
+def namegeneration():
+    selectname = input("Welcome! What type of name do you want to generate? (first, last, full): ")
+    selectgender = input("OK! Now select the gender: ")
+    if selectname == "first":
+        if selectgender == "male":
+            name = names.get_first_name(gender="male")
+            print(name)
+        elif selectgender == "female":
+            name = names.get_first_name(gender="female")
+            print(name)
+    elif selectname == "last":
+        if selectgender == "male":
+            name = names.get_last_name(gender="male")
+            print(name)
+        elif selectgender == "female":
+            name = names.get_last_name(gender="female")
+            print(name)
+    elif selectname == "full":
+        if selectgender == "male":
+            name = names.get_full_name(gender="male")
+            print(name)
+        elif selectgender == "female":
+            name = names.get_full_name(gender="female")
+            print(name)
 #Main while true loop
 while True:
     #The central input, to check what tool does the user want to do
@@ -209,3 +239,7 @@ while True:
     #Access the password generator
     elif select == "password generator":
         passwordgeneretor()
+    elif select == "calculator":
+        calculator()
+    elif select == "random name generator":
+        namegeneration()

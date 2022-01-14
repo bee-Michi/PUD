@@ -33,3 +33,8 @@ v 0.2.1 {
     -Updated readme
     -Added installation.md
 }
+v 0.3.0 {
+    -Added calculator
+    -Added requirements.txt
+    -Added random name generator
+}
